@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>100 Kanojo Vote Wiki</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("banner.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    .panel-principal {
+      width: 88%;
+      max-width: 1400px;
+      margin: 30px auto;
+      background: rgba(243, 234, 242, 0.95);
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+
+    .banner-web {
+      height: 350px;
+      background-image: url("100kanojo banner.png");
+      background-size: cover;
+      background-position: center;
+      margin: 20px;
+      border-radius: 20px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff1493, #ff69b4);
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 45px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: white;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 8px #ccc;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ff1493;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d90075;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 35px;
+      text-align: center;
+      margin: 25px;
+      background: rgba(255,255,255,0.78);
+      border-radius: 20px;
+    }
+
+    h2 {
+      color: #ff1493;
+      font-size: 32px;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .tarjeta {
+      background: white;
+      width: 230px;
+      border-radius: 18px;
+      padding: 15px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.05);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 14px;
+      background: #ffe1ef;
+    }
+
+    .tarjeta h3 {
+      color: #ff1493;
+      margin-bottom: 8px;
+    }
+
+    .tarjeta p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    button {
+      background: #ff1493;
+      color: white;
+      border: none;
+      padding: 11px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #d90075;
+    }
+
+    .resultados-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .resultados-grid p {
+      background: white;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #ff1493;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="panel-principal">
+
+    <div class="banner-web"></div>
+
+    <header>
+      <h1>100 Kanojo Vote Wiki</h1>
+      <p>Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 💕</p>
+    </header>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#votacion">Votación</a>
+      <a href="#resultados">Resultados</a>
+      <a href="https://hyakkano.com/" target="_blank">Sitio oficial</a>
+    </nav>
+
+    <section id="inicio">
+      <h2>¿Qué es 100 Kanojo?</h2>
+
+      <p>
+        Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo,
+        también conocida como 100 Kanojo o The 100 Girlfriends Who Really,
+        Really, Really, Really, Really Love You, es una comedia romántica
+        creada por Rikito Nakamura e ilustrada por Yukiko Nozawa.
+      </p>
+
+      <p>
+        La serie comenzó su publicación el 26 de diciembre de 2019 en la revista
+        Weekly Young Jump. Su historia sigue a Rentaro Aijo, un estudiante que
+        descubre que está destinado a encontrarse con cien almas gemelas.
+      </p>
+
+      <p>
+        Aunque su adaptación al anime debutó a finales de 2023, fue durante
+        los primeros meses de 2025, con el estreno de su segunda temporada,
+        cuando la franquicia alcanzó una enorme popularidad internacional
+        en internet.
+      </p>
+
+      <p>
+        Esta página funciona como una encuesta de popularidad para votar
+        por tu Kanojo favorita.
+      </p>
+    </section>
+
+    <section id="votacion">
+      <h2>Elige tu Kanojo favorita</h2>
+
+      <div class="contenedor">
+
+        <div class="tarjeta">
+          <img src="hakari.PNG" alt="Hakari Hanazono">
+          <h3>Hakari Hanazono</h3>
+          <p>Dulce, romántica y una de las primeras almas gemelas de Rentaro.</p>
+          <button onclick="votar('Hakari')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="karane.PNG" alt="Karane Inda">
+          <h3>Karane Inda</h3>
+          <p>Tsundere de carácter fuerte que oculta sus verdaderos sentimientos.</p>
+          <button onclick="votar('Karane')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="shizuka.PNG" alt="Shizuka Yoshimoto">
+          <h3>Shizuka Yoshimoto</h3>
+          <p>Tímida amante de los libros que se comunica mediante citas literarias.</p>
+          <button onclick="votar('Shizuka')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="nano.PNG" alt="Nano Eiai">
+          <h3>Nano Eiai</h3>
+          <p>Inteligente y racional, siempre busca la solución más eficiente.</p>
+          <button onclick="votar('Nano')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="yakuzen.PNG" alt="Kusuri Yakuzen">
+          <h3>Kusuri Yakuzen</h3>
+          <p>Científica brillante famosa por sus medicinas experimentales.</p>
+          <button onclick="votar('Kusuri')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="hahari.PNG" alt="Hahari Hanazono">
+          <h3>Hahari Hanazono</h3>
+          <p>Madre de Hakari y empresaria poderosa con personalidad peculiar.</p>
+          <button onclick="votar('Hahari')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="kurumi.PNG" alt="Kurumi Haraga">
+          <h3>Kurumi Haraga</h3>
+          <p>Apasionada por la comida y siempre lista para comer algo delicioso.</p>
+          <button onclick="votar('Kurumi')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="mei.PNG" alt="Mei Meido">
+          <h3>Mei Meido</h3>
+          <p>Sirvienta perfecta, disciplinada y extremadamente leal.</p>
+          <button onclick="votar('Mei')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="iku.PNG" alt="Iku Sutou">
+          <h3>Iku Sutou</h3>
+          <p>Deportista incansable que nunca se rinde ante ningún desafío.</p>
+          <button onclick="votar('Iku')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="mimimi.PNG" alt="Mimimi Utsukushisugi">
+          <h3>Mimimi Utsukushisugi</h3>
+          <p>Obsesionada con la belleza y con lucir perfecta en todo momento.</p>
+          <button onclick="votar('Mimimi')">Votar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="meme.PNG" alt="Meme Kakure">
+          <h3>Meme Kakure</h3>
+          <p>Reservada y tímida, intenta pasar desapercibida siempre que puede.</p>
+          <button onclick="votar('Meme')">Votar</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="resultados">
+      <h2>Resultados</h2>
+
+      <div class="resultados-grid">
+        <p id="resultadoHakari">Hakari: 0 votos</p>
+        <p id="resultadoKarane">Karane: 0 votos</p>
+        <p id="resultadoShizuka">Shizuka: 0 votos</p>
+        <p id="resultadoNano">Nano: 0 votos</p>
+        <p id="resultadoKusuri">Kusuri: 0 votos</p>
+        <p id="resultadoHahari">Hahari: 0 votos</p>
+        <p id="resultadoKurumi">Kurumi: 0 votos</p>
+        <p id="resultadoMei">Mei: 0 votos</p>
+        <p id="resultadoIku">Iku: 0 votos</p>
+        <p id="resultadoMimimi">Mimimi: 0 votos</p>
+        <p id="resultadoMeme">Meme: 0 votos</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Página creada para tarea escolar sobre 100 Kanojo 💖</p>
+    </footer>
+
+  </div>
+
+  <script>
+    let votos = JSON.parse(localStorage.getItem("votosKanojo")) || {
+      Hakari: 0,
+      Karane: 0,
+      Shizuka: 0,
+      Nano: 0,
+      Kusuri: 1,
+      Hahari: 0,
+      Kurumi: 0,
+      Mei: 0,
+      Iku: 0,
+      Mimimi: 0,
+      Meme: 0
+    };
+
+    let yaVoto = localStorage.getItem("yaVotoKanojo");
+
+    function votar(nombre) {
+      if (yaVoto) {
+        alert("Ya has votado 😅");
+        return;
+      }
+
+      votos[nombre]++;
+      localStorage.setItem("votosKanojo", JSON.stringify(votos));
+      localStorage.setItem("yaVotoKanojo", "si");
+
+      yaVoto = "si";
+      actualizarResultados();
+
+      alert("Votaste por " + nombre + " 💕");
+    }
+
+    function actualizarResultados() {
+      for (let nombre in votos) {
+        let elemento = document.getElementById("resultado" + nombre);
+
+        if (elemento) {
+          elemento.textContent = nombre + ": " + votos[nombre] + " votos";
+        }
+      }
+    }
+
+    actualizarResultados();
+  </script>
+
+</body>
+</html>
